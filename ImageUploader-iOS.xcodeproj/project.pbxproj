@@ -13,7 +13,35 @@
 		092BC2C1279CAEB800E240BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 092BC2BF279CAEB800E240BA /* Main.storyboard */; };
 		092BC2C3279CAEB900E240BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 092BC2C2279CAEB900E240BA /* Assets.xcassets */; };
 		092BC2C6279CAEB900E240BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 092BC2C4279CAEB900E240BA /* LaunchScreen.storyboard */; };
+		092BC2CC279CB07C00E240BA /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092BC2CB279CB07C00E240BA /* ImageUploader.swift */; };
+		092BC2CE279CB1B100E240BA /* ImageUploader_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092BC2A9279CAE0200E240BA /* ImageUploader_iOS.framework */; platformFilter = ios; };
+		092BC2CF279CB1B100E240BA /* ImageUploader_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092BC2A9279CAE0200E240BA /* ImageUploader_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		092BC2D4279CB2B000E240BA /* ImageUploader-iOS.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 092BC2D3279CB2B000E240BA /* ImageUploader-iOS.podspec */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		092BC2D0279CB1B100E240BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 092BC2A0279CAE0200E240BA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 092BC2A8279CAE0200E240BA;
+			remoteInfo = "ImageUploader-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		092BC2D2279CB1B100E240BA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				092BC2CF279CB1B100E240BA /* ImageUploader_iOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		092BC2A9279CAE0200E240BA /* ImageUploader_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageUploader_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,6 +53,8 @@
 		092BC2C2279CAEB900E240BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		092BC2C5279CAEB900E240BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		092BC2C7279CAEB900E240BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		092BC2CB279CB07C00E240BA /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		092BC2D3279CB2B000E240BA /* ImageUploader-iOS.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ImageUploader-iOS.podspec"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092BC2CE279CB1B100E240BA /* ImageUploader_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,9 +79,11 @@
 		092BC29F279CAE0200E240BA = {
 			isa = PBXGroup;
 			children = (
+				092BC2D3279CB2B000E240BA /* ImageUploader-iOS.podspec */,
 				092BC2AB279CAE0200E240BA /* ImageUploader-iOS */,
 				092BC2B8279CAEB800E240BA /* ImageUploaderExample */,
 				092BC2AA279CAE0200E240BA /* Products */,
+				092BC2CD279CB1B100E240BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,6 +99,7 @@
 		092BC2AB279CAE0200E240BA /* ImageUploader-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				092BC2CB279CB07C00E240BA /* ImageUploader.swift */,
 			);
 			path = "ImageUploader-iOS";
 			sourceTree = "<group>";
@@ -82,6 +116,13 @@
 				092BC2C7279CAEB900E240BA /* Info.plist */,
 			);
 			path = ImageUploaderExample;
+			sourceTree = "<group>";
+		};
+		092BC2CD279CB1B100E240BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,10 +163,12 @@
 				092BC2B3279CAEB800E240BA /* Sources */,
 				092BC2B4279CAEB800E240BA /* Frameworks */,
 				092BC2B5279CAEB800E240BA /* Resources */,
+				092BC2D2279CB1B100E240BA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				092BC2D1279CB1B100E240BA /* PBXTargetDependency */,
 			);
 			name = ImageUploaderExample;
 			productName = ImageUploaderExample;
@@ -144,6 +187,7 @@
 				TargetAttributes = {
 					092BC2A8279CAE0200E240BA = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 					092BC2B6279CAEB800E240BA = {
 						CreatedOnToolsVersion = 13.0;
@@ -174,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092BC2D4279CB2B000E240BA /* ImageUploader-iOS.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +239,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092BC2CC279CB07C00E240BA /* ImageUploader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +254,15 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		092BC2D1279CB1B100E240BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 092BC2A8279CAE0200E240BA /* ImageUploader-iOS */;
+			targetProxy = 092BC2D0279CB1B100E240BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		092BC2BF279CAEB800E240BA /* Main.storyboard */ = {
@@ -354,6 +409,7 @@
 		092BC2B1279CAE0200E240BA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -376,6 +432,7 @@
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -384,6 +441,7 @@
 		092BC2B2279CAE0200E240BA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
