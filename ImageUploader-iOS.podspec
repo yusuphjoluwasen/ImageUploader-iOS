@@ -82,7 +82,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.source       = { :git => "https://github.com/yusuphjoluwasen/ImageUploader-iOS.git", :tag => "#{spec.version}" }
-  spec.vendored_frameworks      = "ImageUploader-iOS.xcframework"
+
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
