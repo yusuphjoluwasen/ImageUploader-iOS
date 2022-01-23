@@ -138,6 +138,5 @@ Pod::Spec.new do |spec|
     spec.dependency "AWSS3"
     spec.dependency "AWSCognito"
     spec.dependency "AWSCore"
-    spec.vendored_frameworks = "ImageUploader-iOS.xcframework"
 
 end

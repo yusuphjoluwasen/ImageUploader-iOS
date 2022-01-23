@@ -1,0 +1,4 @@
+framework module ImageUploader_iOS {
+  header "ImageUploader_iOS-Swift.h"
+  requires objc
+}
