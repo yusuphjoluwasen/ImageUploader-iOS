@@ -138,7 +138,7 @@ Pod::Spec.new do |spec|
     spec.dependency "AWSS3"
     spec.dependency "AWSCognito"
     spec.dependency "AWSCore"
-    spec.source = { :http => "file:ImageUploader-iOS.xcframework.zip" }
+    spec.source = { :http => "https://github.com/yusuphjoluwasen/ImageUploader-iOS/blob/main/ImageUploader-iOS.xcframework.zip" }
     spec.vendored_frameworks = "ImageUploader-iOS.xcframework"
 
 end
