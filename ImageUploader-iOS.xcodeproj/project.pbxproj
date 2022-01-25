@@ -17,6 +17,13 @@
 		092BC2CE279CB1B100E240BA /* ImageUploader_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092BC2A9279CAE0200E240BA /* ImageUploader_iOS.framework */; platformFilter = ios; };
 		092BC2CF279CB1B100E240BA /* ImageUploader_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092BC2A9279CAE0200E240BA /* ImageUploader_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		092BC2D4279CB2B000E240BA /* ImageUploader-iOS.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 092BC2D3279CB2B000E240BA /* ImageUploader-iOS.podspec */; };
+		092BC2D9279D547000E240BA /* AWSS3Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092BC2D8279D547000E240BA /* AWSS3Manager.swift */; };
+		09A53538279E24D400853A65 /* LoaderUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A53537279E24D400853A65 /* LoaderUtil.swift */; };
+		09A5353A279E267D00853A65 /* HelperUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A53539279E267D00853A65 /* HelperUtil.swift */; };
+		09BD7A55279DE0D20004C676 /* ImagePickerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09BD7A54279DE0D20004C676 /* ImagePickerService.swift */; };
+		09D11C99279FB60900EDC9F9 /* ControllerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09D11C98279FB60900EDC9F9 /* ControllerView.swift */; };
+		2F1EBCC7B6C9A74EFA42A186 /* Pods_ImageUploader_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6E463783A269B2E139A09A /* Pods_ImageUploader_iOS.framework */; };
+		E925A45707FA85CB5272CABF /* Pods_ImageUploaderExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B68BE804661887CBDACCD3 /* Pods_ImageUploaderExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0551115FA25870E07FFA5F24 /* Pods-ImageUploaderExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageUploaderExample.release.xcconfig"; path = "Target Support Files/Pods-ImageUploaderExample/Pods-ImageUploaderExample.release.xcconfig"; sourceTree = "<group>"; };
 		092BC2A9279CAE0200E240BA /* ImageUploader_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageUploader_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		092BC2B7279CAEB800E240BA /* ImageUploaderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageUploaderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		092BC2B9279CAEB800E240BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +63,16 @@
 		092BC2C7279CAEB900E240BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		092BC2CB279CB07C00E240BA /* ImageUploader-iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageUploader-iOS.swift"; sourceTree = "<group>"; };
 		092BC2D3279CB2B000E240BA /* ImageUploader-iOS.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "ImageUploader-iOS.podspec"; sourceTree = "<group>"; };
+		092BC2D8279D547000E240BA /* AWSS3Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSS3Manager.swift; sourceTree = "<group>"; };
+		09A53537279E24D400853A65 /* LoaderUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderUtil.swift; sourceTree = "<group>"; };
+		09A53539279E267D00853A65 /* HelperUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperUtil.swift; sourceTree = "<group>"; };
+		09BD7A54279DE0D20004C676 /* ImagePickerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerService.swift; sourceTree = "<group>"; };
+		09D11C98279FB60900EDC9F9 /* ControllerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerView.swift; sourceTree = "<group>"; };
+		4D6E463783A269B2E139A09A /* Pods_ImageUploader_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageUploader_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BFAB4E436435371C9AEA770 /* Pods-ImageUploader-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageUploader-iOS.release.xcconfig"; path = "Target Support Files/Pods-ImageUploader-iOS/Pods-ImageUploader-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		83FA1D130D618F2A55B2E4F1 /* Pods-ImageUploader-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageUploader-iOS.debug.xcconfig"; path = "Target Support Files/Pods-ImageUploader-iOS/Pods-ImageUploader-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		C91CFC091BE1932A4C2302A7 /* Pods-ImageUploaderExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageUploaderExample.debug.xcconfig"; path = "Target Support Files/Pods-ImageUploaderExample/Pods-ImageUploaderExample.debug.xcconfig"; sourceTree = "<group>"; };
+		E2B68BE804661887CBDACCD3 /* Pods_ImageUploaderExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageUploaderExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F1EBCC7B6C9A74EFA42A186 /* Pods_ImageUploader_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				092BC2CE279CB1B100E240BA /* ImageUploader_iOS.framework in Frameworks */,
+				E925A45707FA85CB5272CABF /* Pods_ImageUploaderExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +104,7 @@
 				092BC2B8279CAEB800E240BA /* ImageUploaderExample */,
 				092BC2AA279CAE0200E240BA /* Products */,
 				092BC2CD279CB1B100E240BA /* Frameworks */,
+				ED91929BDC62F250CFD2C186 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +120,8 @@
 		092BC2AB279CAE0200E240BA /* ImageUploader-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				09BD7A53279DDDF20004C676 /* ImagePickerService */,
+				092BC2D5279D53C200E240BA /* AwsUtilityServices */,
 				092BC2CB279CB07C00E240BA /* ImageUploader-iOS.swift */,
 			);
 			path = "ImageUploader-iOS";
@@ -107,9 +130,10 @@
 		092BC2B8279CAEB800E240BA /* ImageUploaderExample */ = {
 			isa = PBXGroup;
 			children = (
+				09D11C97279FB5E600EDC9F9 /* Views */,
+				09A53536279E249A00853A65 /* Utils */,
 				092BC2B9279CAEB800E240BA /* AppDelegate.swift */,
 				092BC2BB279CAEB800E240BA /* SceneDelegate.swift */,
-				092BC2BD279CAEB800E240BA /* ViewController.swift */,
 				092BC2BF279CAEB800E240BA /* Main.storyboard */,
 				092BC2C2279CAEB900E240BA /* Assets.xcassets */,
 				092BC2C4279CAEB900E240BA /* LaunchScreen.storyboard */,
@@ -121,8 +145,55 @@
 		092BC2CD279CB1B100E240BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4D6E463783A269B2E139A09A /* Pods_ImageUploader_iOS.framework */,
+				E2B68BE804661887CBDACCD3 /* Pods_ImageUploaderExample.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		092BC2D5279D53C200E240BA /* AwsUtilityServices */ = {
+			isa = PBXGroup;
+			children = (
+				092BC2D8279D547000E240BA /* AWSS3Manager.swift */,
+			);
+			path = AwsUtilityServices;
+			sourceTree = "<group>";
+		};
+		09A53536279E249A00853A65 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				09A53537279E24D400853A65 /* LoaderUtil.swift */,
+				09A53539279E267D00853A65 /* HelperUtil.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		09BD7A53279DDDF20004C676 /* ImagePickerService */ = {
+			isa = PBXGroup;
+			children = (
+				09BD7A54279DE0D20004C676 /* ImagePickerService.swift */,
+			);
+			path = ImagePickerService;
+			sourceTree = "<group>";
+		};
+		09D11C97279FB5E600EDC9F9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				092BC2BD279CAEB800E240BA /* ViewController.swift */,
+				09D11C98279FB60900EDC9F9 /* ControllerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ED91929BDC62F250CFD2C186 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83FA1D130D618F2A55B2E4F1 /* Pods-ImageUploader-iOS.debug.xcconfig */,
+				7BFAB4E436435371C9AEA770 /* Pods-ImageUploader-iOS.release.xcconfig */,
+				C91CFC091BE1932A4C2302A7 /* Pods-ImageUploaderExample.debug.xcconfig */,
+				0551115FA25870E07FFA5F24 /* Pods-ImageUploaderExample.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 092BC2B0279CAE0200E240BA /* Build configuration list for PBXNativeTarget "ImageUploader-iOS" */;
 			buildPhases = (
+				AD5519D3D9EBBE4BE1126719 /* [CP] Check Pods Manifest.lock */,
 				092BC2A4279CAE0200E240BA /* Headers */,
 				092BC2A5279CAE0200E240BA /* Sources */,
 				092BC2A6279CAE0200E240BA /* Frameworks */,
@@ -160,10 +232,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 092BC2C8279CAEB900E240BA /* Build configuration list for PBXNativeTarget "ImageUploaderExample" */;
 			buildPhases = (
+				A66DCD3CB7FDDEBE4279DB2F /* [CP] Check Pods Manifest.lock */,
 				092BC2B3279CAEB800E240BA /* Sources */,
 				092BC2B4279CAEB800E240BA /* Frameworks */,
 				092BC2B5279CAEB800E240BA /* Resources */,
 				092BC2D2279CB1B100E240BA /* Embed Frameworks */,
+				B84C1B208198339CF9CD663B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -234,11 +308,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A66DCD3CB7FDDEBE4279DB2F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageUploaderExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD5519D3D9EBBE4BE1126719 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageUploader-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B84C1B208198339CF9CD663B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageUploaderExample/Pods-ImageUploaderExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageUploaderExample/Pods-ImageUploaderExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageUploaderExample/Pods-ImageUploaderExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		092BC2A5279CAE0200E240BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092BC2D9279D547000E240BA /* AWSS3Manager.swift in Sources */,
+				09BD7A55279DE0D20004C676 /* ImagePickerService.swift in Sources */,
 				092BC2CC279CB07C00E240BA /* ImageUploader-iOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -247,9 +387,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A53538279E24D400853A65 /* LoaderUtil.swift in Sources */,
 				092BC2BE279CAEB800E240BA /* ViewController.swift in Sources */,
+				09D11C99279FB60900EDC9F9 /* ControllerView.swift in Sources */,
 				092BC2BA279CAEB800E240BA /* AppDelegate.swift in Sources */,
 				092BC2BC279CAEB800E240BA /* SceneDelegate.swift in Sources */,
+				09A5353A279E267D00853A65 /* HelperUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +553,7 @@
 		};
 		092BC2B1279CAE0200E240BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83FA1D130D618F2A55B2E4F1 /* Pods-ImageUploader-iOS.debug.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -443,6 +587,7 @@
 		};
 		092BC2B2279CAE0200E240BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BFAB4E436435371C9AEA770 /* Pods-ImageUploader-iOS.release.xcconfig */;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -475,6 +620,7 @@
 		};
 		092BC2C9279CAEB900E240BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C91CFC091BE1932A4C2302A7 /* Pods-ImageUploaderExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -503,6 +649,7 @@
 		};
 		092BC2CA279CAEB900E240BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0551115FA25870E07FFA5F24 /* Pods-ImageUploaderExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

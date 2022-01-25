@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ImageUploader-iOS"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "An Image Uploader Library to fetch image from users and upload to aws"
 
   # This description is used to generate tags and improve search results.
