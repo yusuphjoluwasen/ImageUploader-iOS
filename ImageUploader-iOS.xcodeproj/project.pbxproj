@@ -14,8 +14,6 @@
 		092BC2C3279CAEB900E240BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 092BC2C2279CAEB900E240BA /* Assets.xcassets */; };
 		092BC2C6279CAEB900E240BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 092BC2C4279CAEB900E240BA /* LaunchScreen.storyboard */; };
 		092BC2CC279CB07C00E240BA /* ImageUploader-iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092BC2CB279CB07C00E240BA /* ImageUploader-iOS.swift */; };
-		092BC2CE279CB1B100E240BA /* ImageUploader_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 092BC2A9279CAE0200E240BA /* ImageUploader_iOS.framework */; platformFilter = ios; };
-		092BC2CF279CB1B100E240BA /* ImageUploader_iOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 092BC2A9279CAE0200E240BA /* ImageUploader_iOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		092BC2D4279CB2B000E240BA /* ImageUploader-iOS.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 092BC2D3279CB2B000E240BA /* ImageUploader-iOS.podspec */; };
 		092BC2D9279D547000E240BA /* AWSS3Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092BC2D8279D547000E240BA /* AWSS3Manager.swift */; };
 		09A53538279E24D400853A65 /* LoaderUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A53537279E24D400853A65 /* LoaderUtil.swift */; };
@@ -25,30 +23,6 @@
 		2F1EBCC7B6C9A74EFA42A186 /* Pods_ImageUploader_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6E463783A269B2E139A09A /* Pods_ImageUploader_iOS.framework */; };
 		E925A45707FA85CB5272CABF /* Pods_ImageUploaderExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2B68BE804661887CBDACCD3 /* Pods_ImageUploaderExample.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		092BC2D0279CB1B100E240BA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 092BC2A0279CAE0200E240BA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 092BC2A8279CAE0200E240BA;
-			remoteInfo = "ImageUploader-iOS";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		092BC2D2279CB1B100E240BA /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				092BC2CF279CB1B100E240BA /* ImageUploader_iOS.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0551115FA25870E07FFA5F24 /* Pods-ImageUploaderExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageUploaderExample.release.xcconfig"; path = "Target Support Files/Pods-ImageUploaderExample/Pods-ImageUploaderExample.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,7 +62,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				092BC2CE279CB1B100E240BA /* ImageUploader_iOS.framework in Frameworks */,
 				E925A45707FA85CB5272CABF /* Pods_ImageUploaderExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,13 +209,11 @@
 				092BC2B3279CAEB800E240BA /* Sources */,
 				092BC2B4279CAEB800E240BA /* Frameworks */,
 				092BC2B5279CAEB800E240BA /* Resources */,
-				092BC2D2279CB1B100E240BA /* Embed Frameworks */,
 				B84C1B208198339CF9CD663B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				092BC2D1279CB1B100E240BA /* PBXTargetDependency */,
 			);
 			name = ImageUploaderExample;
 			productName = ImageUploaderExample;
@@ -397,15 +368,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		092BC2D1279CB1B100E240BA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			platformFilter = ios;
-			target = 092BC2A8279CAE0200E240BA /* ImageUploader-iOS */;
-			targetProxy = 092BC2D0279CB1B100E240BA /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		092BC2BF279CAEB800E240BA /* Main.storyboard */ = {
@@ -634,6 +596,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -663,6 +626,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
