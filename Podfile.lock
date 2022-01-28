@@ -4,11 +4,16 @@ PODS:
   - AWSCore (2.19.1)
   - AWSS3 (2.19.1):
     - AWSCore (= 2.19.1)
+  - ImageUploader-iOS (0.0.4):
+    - AWSCognito
+    - AWSCore
+    - AWSS3
 
 DEPENDENCIES:
   - AWSCognito
   - AWSCore
   - AWSS3
+  - ImageUploader-iOS (from `https://github.com/yusuphjoluwasen/ImageUploader-iOS`, tag `0.0.5`)
 
 SPEC REPOS:
   trunk:
@@ -16,11 +21,22 @@ SPEC REPOS:
     - AWSCore
     - AWSS3
 
+EXTERNAL SOURCES:
+  ImageUploader-iOS:
+    :git: https://github.com/yusuphjoluwasen/ImageUploader-iOS
+    :tag: 0.0.5
+
+CHECKOUT OPTIONS:
+  ImageUploader-iOS:
+    :git: https://github.com/yusuphjoluwasen/ImageUploader-iOS
+    :tag: 0.0.5
+
 SPEC CHECKSUMS:
   AWSCognito: f50de600804941d083af37a7568905f31a774727
   AWSCore: 55c154ae27efc5c98bdc30a0eeea5a35d10a2ab5
   AWSS3: 2272253b098d07803af8dd20ce6ce7302bcffb47
+  ImageUploader-iOS: bc20b15f3e14c98062ca69681be802dbf31932a0
 
-PODFILE CHECKSUM: 02cba3bae7f79f2fdb30e48fd8724e0738add6c5
+PODFILE CHECKSUM: ac4184166f0270a012eaa60fd096f233fbe427f9
 
 COCOAPODS: 1.11.2

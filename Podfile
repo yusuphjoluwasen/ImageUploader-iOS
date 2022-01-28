@@ -17,6 +17,6 @@ target 'ImageUploaderExample' do
   use_frameworks!
 
   # Pods for ImageUploaderExample
-#  pod 'ImageUploader-iOS', :git => 'https://github.com/yusuphjoluwasen/ImageUploader-iOS', :tag => '0.0.4'
+  pod 'ImageUploader-iOS', :git => 'https://github.com/yusuphjoluwasen/ImageUploader-iOS', :tag => '0.0.5'
 
 end

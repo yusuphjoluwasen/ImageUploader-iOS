@@ -1,0 +1,36 @@
+{
+  "name": "ImageUploader-iOS",
+  "version": "0.0.4",
+  "summary": "An Image Uploader Library to fetch image from users and upload to aws",
+  "description": "An Image Uploader Library to fetch images from users and upload to aws",
+  "homepage": "https://github.com/yusuphjoluwasen/ImageUploader-iOS",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Yusuphjoluwasen": "Yusuphjoluwaseun@gmail.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "swift_versions": "5.0",
+  "source": {
+    "git": "https://github.com/yusuphjoluwasen/ImageUploader-iOS.git",
+    "tag": "0.0.4"
+  },
+  "source_files": "ImageUploader-iOS/**/*.{h,m,swift}",
+  "exclude_files": "Classes/Exclude",
+  "dependencies": {
+    "AWSS3": [
+
+    ],
+    "AWSCognito": [
+
+    ],
+    "AWSCore": [
+
+    ]
+  },
+  "swift_version": "5.0"
+}
