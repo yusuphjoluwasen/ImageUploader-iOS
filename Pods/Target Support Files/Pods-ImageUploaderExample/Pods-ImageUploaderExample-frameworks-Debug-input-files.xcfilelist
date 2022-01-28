@@ -2,4 +2,3 @@ ${PODS_ROOT}/Target Support Files/Pods-ImageUploaderExample/Pods-ImageUploaderEx
 ${BUILT_PRODUCTS_DIR}/AWSCognito/AWSCognito.framework
 ${BUILT_PRODUCTS_DIR}/AWSCore/AWSCore.framework
 ${BUILT_PRODUCTS_DIR}/AWSS3/AWSS3.framework
-${BUILT_PRODUCTS_DIR}/ImageUploader-iOS/ImageUploader_iOS.framework

@@ -25,7 +25,7 @@ class AWSS3Manager {
     // Upload image using UIImage object
     func uploadImage(image: UIImage,fileName:String , progress: progressBlock?, completion: completionBlock?) {
         
-        guard let imageData = image.pngData() else {
+        guard let imageData =  image.jpegData(compressionQuality: 0.75) else {
             let error = NSError(domain:"", code:402, userInfo:[NSLocalizedDescriptionKey: "invalid image"])
             completion?(nil, error)
             return

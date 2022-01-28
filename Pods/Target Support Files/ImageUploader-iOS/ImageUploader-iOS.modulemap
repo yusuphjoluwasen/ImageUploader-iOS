@@ -1,6 +1,0 @@
-framework module ImageUploader_iOS {
-  umbrella header "ImageUploader-iOS-umbrella.h"
-
-  export *
-  module * { export * }
-}
