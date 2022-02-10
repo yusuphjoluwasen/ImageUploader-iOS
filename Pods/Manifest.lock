@@ -27,7 +27,7 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   ImageUploader-iOS:
-    :commit: fd89bd85edbbc36e9f98f5aae3deeb599b5f81da
+    :commit: 99aa002dc68bd2552d2f85e8c41d3be918afd2c7
     :git: https://github.com/yusuphjoluwasen/ImageUploader-iOS
 
 SPEC CHECKSUMS:

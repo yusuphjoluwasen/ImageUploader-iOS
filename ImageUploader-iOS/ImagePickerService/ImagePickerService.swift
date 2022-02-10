@@ -36,9 +36,8 @@ open class ImagePicker: NSObject {
             return nil
         }
         
-        //        if type = .camera &&
         return UIAlertAction(title: title, style: .default) { [unowned self] _ in
-            if type = .camera {
+            if type == .camera {
                 checkIfUserAcceptedCameraPermission {
                     self.pickerController.sourceType = type
                     self.presentationController?.present(self.pickerController, animated: true)
@@ -119,38 +118,40 @@ extension ImagePicker: UINavigationControllerDelegate {
     
 }
 
-func checkIfUserAcceptedCameraPermission(action: @escaping ()->Void)){
-    let cameraAuthorizationStatus = AVCaptureDevice.authorizationStatus(for: .video)
-    switch cameraAuthorizationStatus {
-    case .notDetermined: requestCameraPermission(action:action)
-    case .authorized: action()
-    case .restricted, .denied: alertCameraAccessNeeded()
+extension ImagePicker {
+    func checkIfUserAcceptedCameraPermission(action: @escaping ()->Void){
+        let cameraAuthorizationStatus = AVCaptureDevice.authorizationStatus(for: .video)
+        switch cameraAuthorizationStatus {
+        case .notDetermined: requestCameraPermission(action:action)
+        case .authorized: action()
+        case .restricted, .denied: alertCameraAccessNeeded()
+        default:print("nothing")
+        }
+    }
+    
+    func requestCameraPermission(action: @escaping ()->Void) {
+        AVCaptureDevice.requestAccess(for: .video, completionHandler: {accessGranted in
+            guard accessGranted == true else { return }
+            action()
+        })
+    }
+    
+    func alertCameraAccessNeeded() {
+        let settingsAppURL = URL(string: UIApplication.openSettingsURLString)!
+        
+        let alert = UIAlertController(
+            title: "Need Camera Access",
+            message: "Camera access is required to make full use of this app.",
+            preferredStyle: UIAlertController.Style.alert
+        )
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "Allow Camera", style: .cancel, handler: { (alert) -> Void in
+            UIApplication.shared.open(settingsAppURL, options: [:], completionHandler: nil)
+        }))
+        
+        self.presentationController?.present(alert, animated: true)
     }
 }
-
-func requestCameraPermission(action: @escaping ()->Void)) {
-    AVCaptureDevice.requestAccess(for: .video, completionHandler: {accessGranted in
-        guard accessGranted == true else { return }
-        action()
-    })
-}
-
-func alertCameraAccessNeeded() {
-    let settingsAppURL = URL(string: UIApplicationOpenSettingsURLString)!
-    
-    let alert = UIAlertController(
-        title: "Need Camera Access",
-        message: "Camera access is required to make full use of this app.",
-        preferredStyle: UIAlertControllerStyle.alert
-    )
-    
-    alert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))
-    alert.addAction(UIAlertAction(title: "Allow Camera", style: .cancel, handler: { (alert) -> Void in
-        UIApplication.shared.open(settingsAppURL, options: [:], completionHandler: nil)
-    }))
-    
-    present(alert, animated: true, completion: nil)
-}
-
 
 

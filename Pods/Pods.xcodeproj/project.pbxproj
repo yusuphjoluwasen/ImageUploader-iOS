@@ -370,7 +370,7 @@
 		1521F776D7B64C2FE72E38094352DF95 /* AWSCognitoDataset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCognitoDataset.h; path = AWSCognito/AWSCognitoDataset.h; sourceTree = "<group>"; };
 		171351C8194D7166FC224E4918B1CD52 /* AWSService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSService.m; path = AWSCore/Service/AWSService.m; sourceTree = "<group>"; };
 		1AA228E99EDBA29438001544BDE17238 /* AWSDDASLLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSDDASLLogger.h; path = AWSCore/Logging/AWSDDASLLogger.h; sourceTree = "<group>"; };
-		1C0140DE323D456BD2B7B979DC5F5C9D /* ImageUploader_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ImageUploader_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C0140DE323D456BD2B7B979DC5F5C9D /* ImageUploader-iOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "ImageUploader-iOS"; path = ImageUploader_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CF44D7A14584441C8E77339D6734008 /* AWSClientContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSClientContext.m; path = AWSCore/Service/AWSClientContext.m; sourceTree = "<group>"; };
 		1D216CE4A8B6F50D603960D17EE072C6 /* AWSS3 */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AWSS3; path = AWSS3.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D70FD9535EA269DD25F9085DD2F7A1F /* AWSDDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSDDAbstractDatabaseLogger.m; path = AWSCore/Logging/AWSDDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
@@ -414,7 +414,7 @@
 		42AFA7A218486E0518E668442627DC0A /* AWSMTLJSONAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSMTLJSONAdapter.h; path = AWSCore/Mantle/AWSMTLJSONAdapter.h; sourceTree = "<group>"; };
 		44EDEA091F398A279BA9A2B9A0113A07 /* AWSCredentialsProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSCredentialsProvider.h; path = AWSCore/Authentication/AWSCredentialsProvider.h; sourceTree = "<group>"; };
 		4511C61B39EC178100E1E9A27904727D /* NSValueTransformer+AWSMTLInversionAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValueTransformer+AWSMTLInversionAdditions.h"; path = "AWSCore/Mantle/NSValueTransformer+AWSMTLInversionAdditions.h"; sourceTree = "<group>"; };
-		45316750A871B780B78FE40B9B79E8C6 /* Pods_ImageUploaderExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageUploaderExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		45316750A871B780B78FE40B9B79E8C6 /* Pods-ImageUploaderExample */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ImageUploaderExample"; path = Pods_ImageUploaderExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46A217987BFD321DC016F46CCDF3436B /* AWSBolts.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSBolts.m; path = AWSCore/Bolts/AWSBolts.m; sourceTree = "<group>"; };
 		46F99CC66B413DA6F5E4B34A6CAFEC10 /* AWSCore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AWSCore-umbrella.h"; sourceTree = "<group>"; };
 		48EDFF3773D3EF9F851B674C411A81A8 /* ImagePickerService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePickerService.swift; path = "ImageUploader-iOS/ImagePickerService/ImagePickerService.swift"; sourceTree = "<group>"; };
@@ -499,7 +499,7 @@
 		9D2BAA1BF54B6813F4A68E534256DCA1 /* AWSCore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AWSCore.modulemap; sourceTree = "<group>"; };
 		9D45F18F275A622F45E138BA3D9C1A3C /* AWSFMDB+AWSHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "AWSFMDB+AWSHelpers.m"; path = "AWSCore/FMDB/AWSFMDB+AWSHelpers.m"; sourceTree = "<group>"; };
 		9D72A9F4D3E2440DA0B534F5BBE3D39D /* AWSXMLDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSXMLDictionary.m; path = AWSCore/XMLDictionary/AWSXMLDictionary.m; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A07CAAD6404DFAD4B71BBBE222C9B27B /* AWSTMDiskCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AWSTMDiskCache.h; path = AWSCore/TMCache/AWSTMDiskCache.h; sourceTree = "<group>"; };
 		A0FA17A45EB508889B6FBA68FCD1C270 /* AWSS3Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AWSS3Manager.swift; path = "ImageUploader-iOS/AwsUtilityServices/AWSS3Manager.swift"; sourceTree = "<group>"; };
 		A20A1E1277FC567D4ECB88B4130D2C79 /* AWSNSCodingUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AWSNSCodingUtilities.m; path = AWSCore/Utility/AWSNSCodingUtilities.m; sourceTree = "<group>"; };
@@ -702,9 +702,9 @@
 				F08B8146CCEC09E2EF9A2343BA072916 /* AWSCognito */,
 				CCFB8F03867DB892EFC47B53186590C4 /* AWSCore */,
 				1D216CE4A8B6F50D603960D17EE072C6 /* AWSS3 */,
-				1C0140DE323D456BD2B7B979DC5F5C9D /* ImageUploader_iOS.framework */,
+				1C0140DE323D456BD2B7B979DC5F5C9D /* ImageUploader-iOS */,
 				EA8D04AF987F58FBFC32A62C589BE80E /* Pods-ImageUploader-iOS */,
-				45316750A871B780B78FE40B9B79E8C6 /* Pods_ImageUploaderExample.framework */,
+				45316750A871B780B78FE40B9B79E8C6 /* Pods-ImageUploaderExample */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -790,6 +790,7 @@
 				3953C0954AD2DC162864CA2E33B7B9D5 /* AWSS3TransferUtilityTasks.m */,
 				BDE96408450C4AAD5BC5BC7FCE217F7A /* Support Files */,
 			);
+			name = AWSS3;
 			path = AWSS3;
 			sourceTree = "<group>";
 		};
@@ -962,6 +963,7 @@
 				B50BB7D2ACD7CEFB50CC7E52393E4F45 /* NSValueTransformer+AWSMTLPredefinedTransformerAdditions.m */,
 				0A879703216B2BFB193FF8AE3ABC85AB /* Support Files */,
 			);
+			name = AWSCore;
 			path = AWSCore;
 			sourceTree = "<group>";
 		};
@@ -1041,6 +1043,7 @@
 				F1A2F1B7F3F8460E3E78CFF2675BB05B /* AWSCognitoUtil.m */,
 				3C1CFED1F03C6BF516B54BAF7E973115 /* Support Files */,
 			);
+			name = AWSCognito;
 			path = AWSCognito;
 			sourceTree = "<group>";
 		};
@@ -1068,6 +1071,7 @@
 				511DDB0D74E6B77C858864C5D517BE33 /* ImageUploader-iOS.swift */,
 				1AEAFDBD6F21ADA281F383C1E4C786C1 /* Support Files */,
 			);
+			name = "ImageUploader-iOS";
 			path = "ImageUploader-iOS";
 			sourceTree = "<group>";
 		};
@@ -1282,7 +1286,7 @@
 			);
 			name = "Pods-ImageUploaderExample";
 			productName = Pods_ImageUploaderExample;
-			productReference = 45316750A871B780B78FE40B9B79E8C6 /* Pods_ImageUploaderExample.framework */;
+			productReference = 45316750A871B780B78FE40B9B79E8C6 /* Pods-ImageUploaderExample */;
 			productType = "com.apple.product-type.framework";
 		};
 		66F821CEF4E756AAAB0057D88744A92B /* AWSCognito */ = {
@@ -1361,7 +1365,7 @@
 			);
 			name = "ImageUploader-iOS";
 			productName = ImageUploader_iOS;
-			productReference = 1C0140DE323D456BD2B7B979DC5F5C9D /* ImageUploader_iOS.framework */;
+			productReference = 1C0140DE323D456BD2B7B979DC5F5C9D /* ImageUploader-iOS */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -1665,6 +1669,41 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		14B51BFE8D5F3A2DAD8B4A92B5EB57B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEC3F0FA9A3D80AD5AA4857F14208F43 /* ImageUploader-iOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ImageUploader-iOS/ImageUploader-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ImageUploader-iOS/ImageUploader-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ImageUploader-iOS/ImageUploader-iOS.modulemap";
+				PRODUCT_MODULE_NAME = ImageUploader_iOS;
+				PRODUCT_NAME = ImageUploader_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1934,40 +1973,6 @@
 			};
 			name = Debug;
 		};
-		95D63A110C6A6033E4FD12AB28D96D12 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EEC3F0FA9A3D80AD5AA4857F14208F43 /* ImageUploader-iOS.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ImageUploader-iOS/ImageUploader-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ImageUploader-iOS/ImageUploader-iOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ImageUploader-iOS/ImageUploader-iOS.modulemap";
-				PRODUCT_MODULE_NAME = ImageUploader_iOS;
-				PRODUCT_NAME = ImageUploader_iOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		A73D1EBA088086C5697E3D93B0FA019E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 02D1009D7FCDF8E523D90321873ED855 /* AWSS3.debug.xcconfig */;
@@ -2035,41 +2040,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		BDDB2DD3616050ED87493DDE61659BB9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC2D03C2363AB0F584088B355B33B620 /* ImageUploader-iOS.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/ImageUploader-iOS/ImageUploader-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ImageUploader-iOS/ImageUploader-iOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/ImageUploader-iOS/ImageUploader-iOS.modulemap";
-				PRODUCT_MODULE_NAME = ImageUploader_iOS;
-				PRODUCT_NAME = ImageUploader_iOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		BE66A4BA40156C54130A8D0C41D8001F /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2219,6 +2189,42 @@
 			};
 			name = Release;
 		};
+		FE06154000C7DD5B39D7840220FD1CE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC2D03C2363AB0F584088B355B33B620 /* ImageUploader-iOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ImageUploader-iOS/ImageUploader-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ImageUploader-iOS/ImageUploader-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ImageUploader-iOS/ImageUploader-iOS.modulemap";
+				PRODUCT_MODULE_NAME = ImageUploader_iOS;
+				PRODUCT_NAME = ImageUploader_iOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2261,8 +2267,8 @@
 		C5B2AD1C615469049B9130B00CBBBC0B /* Build configuration list for PBXNativeTarget "ImageUploader-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				95D63A110C6A6033E4FD12AB28D96D12 /* Debug */,
-				BDDB2DD3616050ED87493DDE61659BB9 /* Release */,
+				14B51BFE8D5F3A2DAD8B4A92B5EB57B9 /* Debug */,
+				FE06154000C7DD5B39D7840220FD1CE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
