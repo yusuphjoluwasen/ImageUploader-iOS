@@ -48,7 +48,7 @@ class ViewController: UIViewController {
     }
 }
 
-//MARK:Image Picker
+//MARK:- Image Picker
 extension ViewController:ImagePickerDelegate {
     func didSelect(image: UIImage?) {
         guard let image = image else {

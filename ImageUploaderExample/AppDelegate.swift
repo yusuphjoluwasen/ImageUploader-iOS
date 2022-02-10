@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //Pass your access key, secret key and the location of your bucket
         ImageUploader.shared.setAWSCredentials(accessKey: "ACCESS_KEY", secretKey: "SECRET_KEY", region: .USEast1)
         ImageUploader.shared.initializeS3()
         return true
