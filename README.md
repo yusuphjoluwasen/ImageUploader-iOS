@@ -76,4 +76,4 @@ imageUploader.uploadImageToAWS(image: image) { result in
 ## License
 
 The ImageUploader-iOS CocoaPods library is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
-```
+
