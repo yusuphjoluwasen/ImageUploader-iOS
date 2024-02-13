@@ -44,25 +44,27 @@ let imageUploader = ImageUploader(accessKey: "YOUR_AWS_ACCESS_KEY", secretKey: "
 3. Fetch images from the user's device:
 
 ```swift
-imageUploader.fetchImageFromDevice { result in
-    switch result {
-    case .success(let image):
-        // Handle fetched image
-    case .failure(let error):
-        // Handle error
-    }
+@objc private func fetchImage() {
+    ImageUploader.shared.pickImage(controller: self, imagePicker: &imagePicker)
 }
-```
 
-4. Upload images to AWS S3:
-
-```swift
-imageUploader.uploadImageToAWS(image: image) { result in
-    switch result {
-    case .success(let url):
-        // Handle uploaded image URL
-    case .failure(let error):
-        // Handle error
+//MARK:- Image Picker
+extension ViewController: ImagePickerDelegate {
+    func didSelect(image: UIImage?) {
+        guard let image = image else {
+            return
+        }
+        imageView.image = image
+        imageView.layer.masksToBounds = true
+        ImageUploader.shared.provideBucketName(bucketName: "bucket-name")
+        ImageUploader.shared.uploadImage(image: image, fileName: "imagename.png", progressaction: { [weak self] progress in
+            // Show any loader or progress of your choice
+            self?.showLoader()
+        }, completedaction: { [weak self] imageString in
+            self?.hideLoader()
+            // Do something with the uploaded image string
+            // For example, send the image URL to the backend
+        })
     }
 }
 ```
@@ -77,3 +79,6 @@ imageUploader.uploadImageToAWS(image: image) { result in
 
 The ImageUploader-iOS CocoaPods library is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
 
+## Example App
+
+The repository also contains an example app demonstrating the usage of the library.
