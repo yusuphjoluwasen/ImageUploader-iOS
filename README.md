@@ -1,6 +1,3 @@
-Got it! Here's the revised README.md file with the appropriate name:
-
-```markdown
 # ImageUploader-iOS
 
 ## Overview
